@@ -5,16 +5,10 @@ import org.testng.annotations.Test;
 import pageobject.RegisterPage;
 import utilities.Base;
 
-public class RegisterTest extends Base {
+public class HomeTest extends Base {
   
   @Test(priority=0)
   public void register() throws InterruptedException {
-	  RegisterPage obj1=new RegisterPage(driver);
-	  obj1.registerDetails();
-	  Thread.sleep(5000);
-  }
-  @Test(priority=18)
-  public void register2() throws InterruptedException {
 	  RegisterPage obj1=new RegisterPage(driver);
 	  obj1.registerDetails();
 	  Thread.sleep(5000);
