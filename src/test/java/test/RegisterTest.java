@@ -13,12 +13,7 @@ public class RegisterTest extends Base {
 	  obj1.registerDetails();
 	  Thread.sleep(5000);
   }
-  @Test(priority=18)
-  public void register2() throws InterruptedException {
-	  RegisterPage obj1=new RegisterPage(driver);
-	  obj1.registerDetails();
-	  Thread.sleep(5000);
-  }
+  
   @Test(priority=1)
   public void registerFillFormFirstName() throws InterruptedException
   {
@@ -136,6 +131,12 @@ public class RegisterTest extends Base {
   {
 	  RegisterPage obj17=new RegisterPage(driver);
 	  obj17.continueBtnDetails();
+	  Thread.sleep(5000);
+  }
+  @Test(priority=18)
+  public void register2() throws InterruptedException {
+	  RegisterPage obj1=new RegisterPage(driver);
+	  obj1.registerDetails();
 	  Thread.sleep(5000);
   }
   
